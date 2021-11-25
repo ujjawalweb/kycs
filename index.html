@@ -17,6 +17,26 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
   
+  h4{font-size:18px;}
+  .left {
+    position: relative!important;
+    left: -71px!important;
+    top: -72px!important;
+}
+  .mts{margin-top: -31px;}
+  legend {
+    display: block;
+	    position: relative!important;
+    top: -31px!important;
+    width: 100%;
+    font-size: 21px!important;}
+	
+	label {
+    font-weight: 500;
+    color: 122228;
+    font-size: 16px!important;
+    color: #122228;}
+  
   .btn-primary {
     position: relative!important;
     font-weight: 600;
@@ -45,8 +65,7 @@
     border-radius: 20px;
     padding: 104px 0;
     }
-	.main{width: 780px!important;max-width:900px !important;margin-top: -37px!important;
-    z-index: 9999!important;}
+	.main{width: 780px!important;max-width:900px !important;}
 	
 
 	
@@ -78,13 +97,13 @@
 
 
 @media only screen and (max-width: 576px) {
-.left{margin-left:-42px;margin-top: -46px;}
+.left{margin-left:-42px;margin-top: -61px;}
 .kyc {
     margin-top: -104px;
     border-radius: 20px 20px 0 0;
     height: 54px!important;
 }
-
+    .mts{margin-top: -14px;}
 
 h4{font-size:19px;}
 
@@ -101,7 +120,7 @@ h4{font-size:19px;}
 
 .main{    margin-top: -57px;}
 
-label{font-size:17px!important;}
+label{font-size:16px!important;}
 
 ::placeholder{color:#8a96b1 !important;font-size:14px;}
 select option { color:#8a96b1 !important;font-size:14px!important;}
@@ -413,7 +432,7 @@ h2{background: #122228;
 		<form>
 		<fieldset>
             <legend>KYC Details</legend>
-
+<div class="mts">
                 <label for="sex">Select Type</label><br>
                 <select id="sex" class="form-control browser-default custom-select">
                 <option value="male">PAN Card</option>
@@ -430,6 +449,7 @@ h2{background: #122228;
   
 
   <input type="text" name="password" class="form-control" id="pass" placeholder="Name As Per Proof" required>
+  </div>
   	</fieldset>
  </form>
 </div>
