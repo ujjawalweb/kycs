@@ -54,16 +54,7 @@
 
 
 h4{font-size:19px;}
-.js--image-previews::after {
-    content: "Back Image";
-    font-family: 'Material Icons';
-    position: relative!important;
-    font-size: 17px!important;
-    color: #fff;
-    top: calc(121% - 3rem)!important;
-    left: calc(46% - 2.25rem)!important;
-    z-index: 0;
-}
+
 
 .js--image-preview::after {
     content: "Front Image";
@@ -317,7 +308,7 @@ h1 {
   background-size: cover;
 }
 .js--image-preview::after {
-  content: "Front Image";
+  content: "";
   font-family: 'Material Icons';
   position: relative;
   font-size: 26px;
@@ -366,34 +357,7 @@ h2{background: #122228;
 	margin-top:20px;
     padding: 10px 0px;}
 	
-	.js--image-previews {
-  height: 93px;
-  width: 100%;
-  position: relative;
-  overflow: hidden;
-  background-image: url('');
-  background-color: grey;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.js--image-previews::after {
-  content: "Back Image";
-  font-family: 'Material Icons';
-  position: relative;
-  font-size: 26px;
-  color: #fff;
- top: calc(78% - 3rem);
-    left: calc(33% - 2.25rem);
-  z-index: 0;
-}
 
-.js--image-previews.js--no-default::after {
-  display: none;
-}
-.js--image-previews:nth-child(2) {
-  background-image: url('http://bastianandre.at/giphy.gif');
-}
 
 </style>
 </head>
@@ -457,16 +421,18 @@ h2{background: #122228;
       </label>
     </div>
   </div>
+  <h6>Front Image</h6>
   </div>
 <div class="wrapper">
 <div class="box">
-    <div class="js--image-previews"></div>
+    <div class="js--image-preview"></div>
     <div class="upload-options">
       <label>
         <input type="file" class="image-upload" accept="image/*" />
       </label>
     </div>
   </div>
+  <h6>Back Image</h6>
 </div>
 	</div>
 			    
