@@ -11,6 +11,11 @@
     <title>KYC Form</title>
 
 <style>
+
+h6{position:fixed;color:#fff;
+    font-size: 24px;
+    font-weight: 400;
+}
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 875px) 
@@ -24,6 +29,23 @@
     top: -89px!important;
 }
 
+.upload-options label::after {
+    content: '🖼️';
+    font-family: 'Material Icons';
+    position: absolute!important;;
+    font-size: 20px!important;;
+    color: #e6e6e6;
+    top: calc(50% - 2.5rem)!important;
+    left: calc(56% - 1.25rem)!important;;
+    top: 5px!important;;
+    z-index: 0;}
+	
+h6 {
+    position: fixed;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;}
+	
 .in{    margin-top: 5px !important;}
 .form-control{height:34px!important;padding: 0px 19px!important;
   }
@@ -92,7 +114,6 @@
     margin-left: -40px!important;
     margin-top: -46px;
 }
-										      
 .btn-primary {
     position: relative!important;
     font-weight: 600;
@@ -110,22 +131,28 @@
 
 @media only screen and (max-width: 576px) {
 .left{margin-left:-42px;margin-top: -61px;}
+.in{margin-top: 8px!important;}
+
+.form-control {
+    width: 85%;
+    height: 34px !important;
+    padding: 0 9px !important;
+}
+h6 {
+    position: fixed;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;}
+
 .kyc {
     margin-top: -104px;
     border-radius: 20px 20px 0 0;
     height: 54px!important;
 }
     .mts{margin-top: -14px;}
-										      
 
 h4{font-size:19px;}
-.in{margin-top: 8px!important;}										      
 
-	.form-control {
-    width: 85%;
-    height: 34px !important;
-    padding: 0 9px !important;
-}									      
 
 .js--image-preview::after {
     content: "Front Image";
@@ -315,7 +342,7 @@ h1 {
 .upload-options {
   position: relative;
   height: 75px;
-  background-color: #7c7676;
+  background-color: #808080;
   cursor: pointer;
   overflow: hidden;
   text-align: center;
@@ -493,8 +520,9 @@ h2{background: #122228;
       </label>
     </div>
   </div>
-  <h6>Front Image</h6>
+    <h6>Front Image</h6>
   </div>
+
 <div class="wrapper">
 <div class="box">
     <div class="js--image-preview"></div>
