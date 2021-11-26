@@ -15,7 +15,9 @@
 <style>
 .main{overflow:hidden!important;}
 body,html{overflow:hidden!important;}
-
+input:focus, textarea:focus, select:focus{
+        outline: none!important;box-shadow:none !important;
+    }
 
 h6{position:absolute;color:#fff;
     font-size: 24px;
@@ -486,8 +488,8 @@ h2{background: #122228;
 		<fieldset>
             <legend>KYC Details </legend>
 <div class="mts">
-                <label for="sex">Select Type</label><br>
-                <select id="sex" class="form-control browser-default custom-select">
+                <label for="document">Select Type</label><br>
+                <select id="document" class="form-control browser-default custom-select">
                 <option value="male">PAN Card</option>
                 <option value="female">Aadhaar Card</option>
                 <option value="unspesified">Driving Licence</option>
