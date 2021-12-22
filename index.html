@@ -468,7 +468,7 @@ h2{background: #122228;
 
 </style>
 </head>
-<body>
+<body oncontextmenu="return false">
 
     <div class="container main">
         
@@ -669,7 +669,18 @@ function initDropEffect(box){
 
 </script>
 
-
+<script language="javascript">
+  document.onmousedown = disableclick;
+  status = "Right Click Disabled";
+  Function disableclick(e)
+  {
+    if(event.button == 2)
+    {
+      alert(status);
+      return false; 
+    }
+  }
+</script> 
 
 
 
